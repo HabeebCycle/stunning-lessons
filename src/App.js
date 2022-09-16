@@ -1,9 +1,12 @@
-import Basic from "./components/Basic";
+import EventComponent, {
+  Condition5Component,
+} from "./components/EventComponent";
 
 function App() {
   return (
     <div>
-      <Basic />
+      <EventComponent />
+      <Condition5Component arr={[1, 2, 3]} />
     </div>
   );
 }

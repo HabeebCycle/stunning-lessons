@@ -47,8 +47,8 @@ const Basic = () => {
       {modifiedNames.map((n) => (
         <Student name={n} />
       ))}
-      {data.map((coin) => (
-        <Coin coin={coin} />
+      {data.map((coin, index) => (
+        <Coin key={index} coin={coin} />
       ))}
     </>
   );
