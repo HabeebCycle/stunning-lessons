@@ -24,3 +24,24 @@ nav ul {
   display: flex;
   gap: 8px;
 }
+
+.my-style {
+  color: green;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+#my-id {
+  color: red;
+  font-size: 35px;
+}
+
+.count-div {
+  border: 1px solid #4567ae;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

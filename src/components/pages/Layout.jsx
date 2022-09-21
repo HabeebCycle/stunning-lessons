@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
   return (
     <>
       <nav>
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
           </li>
         </ul>
       </nav>
-      {children}
+      {props.children}
       <footer>
         <p style={{ textAlign: "center", borderTop: "1px solid purple" }}>
           Copyright &copy; 2022
