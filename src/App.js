@@ -1,9 +1,9 @@
-import MyColor from "./components/hooks/MyColor";
+import InputComponent from "./components/hooks/InputComponent";
 
 function App() {
   return (
     <div>
-      <MyColor />
+      <InputComponent />
     </div>
   );
 }
