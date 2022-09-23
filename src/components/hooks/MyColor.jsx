@@ -7,8 +7,13 @@ const MyColor = () => {
       <h3>My Favourite Color is {color.toUpperCase()}</h3>
       <div style={{ width: "40px", height: "40px", background: color }}></div>
       <div>
+<<<<<<< HEAD
+        {color !== "pink" && (
+          <button onClick={() => setColor("pink")}>PINK</button>
+=======
         {color !== "green" && (
           <button onClick={() => setColor("green")}>GREEN</button>
+>>>>>>> master
         )}
         {color !== "red" && (
           <button onClick={() => setColor("red")}>RED</button>
