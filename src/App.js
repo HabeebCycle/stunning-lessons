@@ -1,11 +1,9 @@
-import InputComponent from "./components/hooks/InputComponent";
-import CustomState from "./components/hooks/CustomState";
+import CustomForm2 from "./components/hooks/CustomForm2";
 
 function App() {
   return (
     <div>
-      <InputComponent />
-      <CustomState />
+      <CustomForm2 />
     </div>
   );
 }
