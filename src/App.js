@@ -1,17 +1,11 @@
-<<<<<<< HEAD
 import InputComponent from "./components/hooks/InputComponent";
-=======
-import MyColor from "./components/hooks/MyColor";
->>>>>>> master
+import CustomState from "./components/hooks/CustomState";
 
 function App() {
   return (
     <div>
-<<<<<<< HEAD
       <InputComponent />
-=======
-      <MyColor />
->>>>>>> master
+      <CustomState />
     </div>
   );
 }
