@@ -1,9 +1,9 @@
-import CustomForm2 from "./components/hooks/CustomForm2";
+import Todos from "./components/todo/Todos";
 
 function App() {
   return (
     <div>
-      <CustomForm2 />
+      <Todos />
     </div>
   );
 }
@@ -12,3 +12,4 @@ export default App; //props
 
 //React Hook
 // useState
+// useEffect
