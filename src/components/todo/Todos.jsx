@@ -7,22 +7,30 @@ const Todos = () => {
   const [error, setError] = React.useState("");
   //https://jsonplaceholder.typicode.com
 
+  const fetchApi = (url, fFxn, eFxn) => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => fFxn(data))
+      .catch((err) => eFxn(err));
+  };
+
   React.useEffect(() => {
-    const fetchTodos = () => {
-      fetch("https://jsonplaceholder.typicode.com/todos")
-        .then((response) => response.json())
-        .then((json) => {
-          setIsLoading(false);
-          setData(json);
-          setError("");
-        })
-        .catch((err) => {
-          setError(err.message);
-          setIsLoading(false);
-        });
+    const getInitialData = (data) => {
+      setData(data);
+      setError("");
+      setIsLoading(false);
     };
 
-    fetchTodos();
+    const initiateError = (err) => {
+      setError(err.message);
+      setIsLoading(false);
+    };
+
+    fetchApi(
+      "https://jsonplaceholder.typicode.com/todos",
+      getInitialData,
+      initiateError
+    );
   }, []);
 
   return (
@@ -32,7 +40,7 @@ const Todos = () => {
         {isLoading && <p>Loading...</p>}
         {error && <p>{error}</p>}
         {data.map((obj) => (
-          <Todo key={obj.id} todo={obj} />
+          <Todo key={obj.id} todo={obj} fetchApi={fetchApi} />
         ))}
       </div>
     </div>
