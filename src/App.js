@@ -1,9 +1,9 @@
-import Todos from "./components/todo/Todos";
+import CustomAsync from "./components/asyncAwait/CustomAsync";
 
 function App() {
   return (
     <div>
-      <Todos />
+      <CustomAsync />
     </div>
   );
 }
