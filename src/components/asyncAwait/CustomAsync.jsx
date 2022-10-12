@@ -9,14 +9,14 @@ const CustomAsync = () => {
       const res = await fetch("https://jsonplaceholder.typicode.com/todos");
       console.log("Here 1");
       const d = await res.json();
-      console.log(d);
-      //setData(d);
+      //console.log(d);
+      setData(d);
     };
 
     asFun();
   }, []);
 
-  return <div>{data}</div>;
+  return <div>{JSON.stringify(data)}</div>;
 };
 
 export default CustomAsync;
