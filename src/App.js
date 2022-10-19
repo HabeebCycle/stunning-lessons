@@ -1,10 +1,11 @@
 import React from "react";
-import CustomUseReducer2 from "./components/hooks/CustomUseReducer2";
+import CustomUseCallback from "./components/hooks/CustomUseCallback";
+import CustomUseMemo from "./components/hooks/CustomUseMemo";
 
 function App() {
   return (
     <div>
-      <CustomUseReducer2 />
+      <CustomUseMemo />
     </div>
   );
 }
